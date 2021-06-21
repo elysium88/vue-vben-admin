@@ -7,7 +7,7 @@
   import { useScript } from '/@/hooks/web/useScript';
 
   const MAP_URL =
-    'https://maps.googleapis.com/maps/api/js?key=AIzaSyBQWrGwj4gAzKndcbwD5favT9K0wgty_0&signed_in=true';
+    'https://maps.googleapis.com/maps/api/js?key=AIzaSyA0r9zPPPa88RzkQgRNJ6qDV6ur7_PH4-4&libraries=drawing,geometry';
 
   export default defineComponent({
     name: 'GoogleMap',

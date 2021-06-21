@@ -6,7 +6,7 @@
 
   import { useScript } from '/@/hooks/web/useScript';
 
-  const A_MAP_URL = 'https://webapi.amap.com/maps?v=2.0&key=d7bb98e7185300250dd5f918c12f484b';
+  const A_MAP_URL = 'https://webapi.amap.com/maps?v=2.0&key=1434164b9387d769721a60788ec8c2d8';
 
   export default defineComponent({
     name: 'AMap',
