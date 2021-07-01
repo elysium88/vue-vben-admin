@@ -10,7 +10,7 @@ export function createFakeUserList() {
       avatar: 'https://q1.qlogo.cn/g?b=qq&nk=190848757&s=640',
       desc: 'manager',
       password: '123456',
-      token: 'fakeToken1',
+      token: '066db8e6-1258-454c-905c-2ba40fbcc2c1',
       roles: [
         {
           roleName: 'Super Admin',
@@ -71,8 +71,9 @@ export default [
     method: 'get',
     response: (request: requestParams) => {
       const token = getRequestToken(request);
+      console.log(token);
       if (!token) return resultError('Invalid token');
-      const checkUser = createFakeUserList().find((item) => item.token === token);
+      const checkUser = createFakeUserList().find((item) => 'Bearer ' + item.token === token);
       if (!checkUser) {
         return resultError('The corresponding user information was not obtained!');
       }
